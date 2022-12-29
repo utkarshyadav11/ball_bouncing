@@ -1,0 +1,56 @@
+.container {
+  height: 500px;
+  width: 500px;
+  margin: auto;
+}
+
+.ball {
+  background-color: red;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  position: relative;
+  top: 100px;
+  left: 200px;
+  animation: bounce 1.2s infinite;
+}
+
+@keyframes bounce {
+  10% {
+    height: 80px;
+    width: 80px;
+  }
+
+  50% {
+    height: 80px;
+    width: 80px;
+    transform: translateY(240px);
+  }
+
+  80% {
+    height: 80px;
+    width: 80px;
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.shd {
+  background-color: rgb(70, 70, 70);
+  box-shadow: rgba(105, 105, 105, 0.959) 1px 1px 15px 2px;
+  height: 10px;
+  width: 80px;
+  border-radius: 50%;
+  position: relative;
+  top: 340px;
+  left: 201px;
+  animation: shadow 1.2s infinite;
+}
+
+@keyframes shadow {
+  50% {
+    transform: scaleX(0.5);
+  }
+}
